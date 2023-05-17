@@ -23,19 +23,19 @@ public class OrderRequest {
     private String currency;
 
     @Valid
-    @NotNull
+    @NotNull(message = "Customer Info can not empty")
     private Customer customer;
 
     @Valid
-    @NotNull
+    @NotNull(message = "Payment Method can not be emopty")
     private PaymentMethod paymentMethod;
 
     @Valid
-    @NotNull
+    @NotNull(message = "Orders Info can not be empty")
     private Orders orders;
 
     @Valid
-    @NotNull
+    @NotNull(message = "Order Details can not be Empty")
     private List<OrderDetail> orderdetails;
 
 }
