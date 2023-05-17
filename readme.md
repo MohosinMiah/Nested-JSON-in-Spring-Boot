@@ -113,9 +113,11 @@
 </code>
 
 <h1> METHOD 2: Example of Nested JSON Handling and Dynamicly Handle Validation<h1>
+
 ## Please Note: I just make a packege name with second just for us to keep track the varity of methodology we applied.Later we can figure it out easily.
 ## API Request URL: http://localhost:8088/order
 ## Nested JSON Sample Requist
+
 <code>
 {
   "transactionId": "123456789",
@@ -172,4 +174,19 @@
 
 ]
 }
+</code>
+
+
+## Sample Response
+
+<code>
+
+{
+    "errors": {
+        "paymentMethod.customerid": "Payment method customer ID is required",
+        "orderdetails[1].orderdetailsid": "Order Details Id is required",
+        "orderdetails[2].orderid": "Order ID is required"
+    }
+}
+
 </code>
