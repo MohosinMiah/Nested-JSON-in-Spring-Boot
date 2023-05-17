@@ -113,7 +113,7 @@
 </code>
 
 <h1> METHOD 2: Example of Nested JSON Handling and Dynamicly Handle Validation<h1>
-## Please Note: I just make a packege name with second just for us to keep the varity of methodology we applied.
+## Please Note: I just make a packege name with second just for us to keep track the varity of methodology we applied.Later we can figure it out easily.
 ## API Request URL: http://localhost:8088/order
 ## Nested JSON Sample Requist
 <code>
