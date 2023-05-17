@@ -3,6 +3,9 @@ package com.nestedjson.nestedjson.service;
 import org.springframework.stereotype.Service;
 
 import com.nestedjson.nestedjson.dto.CompanyDTO;
+import com.nestedjson.nestedjson.second.OrderRequest;
+
+import jakarta.validation.Valid;
 
 @Service
 public class CompanyServiceImpl implements CompanyService {
@@ -14,6 +17,12 @@ public class CompanyServiceImpl implements CompanyService {
 
         // For this example, we will simply return the received DTO
         return companyDTO;
+    }
+
+    @Override
+    public OrderRequest createOrder(@Valid OrderRequest orderRequest) {
+        // TODO Auto-generated method stub
+        return orderRequest;
     }
 
  

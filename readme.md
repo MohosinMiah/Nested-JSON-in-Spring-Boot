@@ -111,3 +111,65 @@
     }
 }
 </code>
+
+<h1> METHOD 2: Example of Nested JSON Handling and Dynamicly Handle Validation<h1>
+## Please Note: I just make a packege name with second just for us to keep the varity of methodology we applied.
+## API Request URL: http://localhost:8088/order
+## Nested JSON Sample Requist
+<code>
+{
+  "transactionId": "123456789",
+  "amount": 149.99,
+  "currency": "USD",
+  "customer": {
+    "id": "987654321",
+    "name": "Jane Smith",
+    "email": "janesmith@example.com"
+  },
+  "paymentMethod": {
+    "customerid":"987654321",
+    "type": "creditCard",
+    "cardNumber": "1234 5678 9012 3456",
+    "expirationMonth": "05",
+    "expirationYear": "2024",
+    "cvv": "123",
+    "billindaddressid":1,
+    "billingAddress": {
+      "billindaddressid":1,
+      "street": "456 Elm St",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zip": "90001"
+    }
+  },
+  "orders": {
+    "orderid": "1",
+    "customerid": "987654321",
+    "orderdate": "12-01-2023"
+  },
+  "orderdetails": [
+    {
+  "orderdetailsid": "1",
+  "orderid": "1",
+  "productid": "1",
+  "price": 49.99,
+  "quantity": 2
+},
+{
+  "orderdetailsid": "2",
+  "orderid": "1",
+  "productid": "2",
+  "price": 25,
+  "quantity": 1
+},
+{
+  "orderdetailsid": "3",
+  "orderid": "1",
+  "productid": "3",
+  "price": 55,
+  "quantity": 3
+}
+
+]
+}
+</code>

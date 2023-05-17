@@ -17,23 +17,28 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.nestedjson.nestedjson.dto.CompanyDTO;
+import com.nestedjson.nestedjson.second.OrderRequest;
 import com.nestedjson.nestedjson.service.CompanyService;
 
 import jakarta.validation.Valid;
 
-@RestController
-@RequestMapping("/company")
+@RestController()
 public class CompanyController {
 
     @Autowired
     private  CompanyService companyService;
 
-
-
-    @PostMapping
+    @PostMapping("/company")
     public ResponseEntity<String> saveCompany(@Valid @RequestBody CompanyDTO companyDTO) {
         companyService.createCompany(companyDTO);
         return ResponseEntity.ok("Company saved successfully");
+    }
+
+
+    @PostMapping("/order")
+    public ResponseEntity<String> saveCompany(@Valid @RequestBody OrderRequest orderRequest) {
+        companyService.createOrder(orderRequest);
+        return ResponseEntity.ok("Order Request saved successfully");
     }
 
     // @ExceptionHandler(MethodArgumentNotValidException.class)

@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+
 public class CompanyPFDetailsDTO {
  
     @NotEmpty(message = " CompanyPFDetails pfName name must requred")
