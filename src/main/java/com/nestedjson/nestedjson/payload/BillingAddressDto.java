@@ -1,4 +1,4 @@
-package com.nestedjson.nestedjson.second;
+package com.nestedjson.nestedjson.payload;
 
 import jakarta.validation.constraints.NotEmpty;
 import lombok.AllArgsConstructor;
@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class BillingAddress {
+public class BillingAddressDto {
     @NotEmpty(message = "Billing Address is required")
     private String billindaddressid;
 

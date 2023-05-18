@@ -1,10 +1,10 @@
 package com.nestedjson.nestedjson;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.nestedjson.nestedjson.payload.CompanyPFDetails;
-import com.nestedjson.nestedjson.payload.Contractors;
-import com.nestedjson.nestedjson.payload.Employee;
-import com.nestedjson.nestedjson.payload.NestedPOJODemo;
+import com.nestedjson.nestedjson.first.CompanyPFDetails;
+import com.nestedjson.nestedjson.first.Contractors;
+import com.nestedjson.nestedjson.first.Employee;
+import com.nestedjson.nestedjson.first.NestedPOJODemo;
 
 import java.io.File;
 import java.io.IOException;

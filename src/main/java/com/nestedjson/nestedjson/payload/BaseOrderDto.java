@@ -1,4 +1,4 @@
-package com.nestedjson.nestedjson.second;
+package com.nestedjson.nestedjson.payload;
 
 import java.util.List;
 
@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class OrderRequest {
+public class BaseOrderDto {
     @NotEmpty(message = "Transaction ID is requirede")
     private String transactionId;
 
@@ -24,18 +24,18 @@ public class OrderRequest {
 
     @Valid
     @NotNull(message = "Customer Info can not empty")
-    private Customer customer;
+    private CustomerDto customer;
 
     @Valid
     @NotNull(message = "Payment Method can not be emopty")
-    private PaymentMethod paymentMethod;
+    private PaymentMethodDto paymentMethod;
 
     @Valid
     @NotNull(message = "Orders Info can not be empty")
-    private Orders orders;
+    private OrdersDto orders;
 
     @Valid
     @NotNull(message = "Order Details can not be Empty")
-    private List<OrderDetail> orderdetails;
+    private List<OrderDetailDto> orderdetails;
 
 }

@@ -1,4 +1,4 @@
-package com.nestedjson.nestedjson.second;
+package com.nestedjson.nestedjson.payload;
 
 import jakarta.validation.constraints.NotEmpty;
 import lombok.AllArgsConstructor;
@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Customer {
+public class CustomerDto {
     @NotEmpty(message = "Customer ID is required")
     private String id;
 

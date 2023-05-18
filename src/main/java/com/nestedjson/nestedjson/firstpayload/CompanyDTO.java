@@ -1,4 +1,4 @@
-package com.nestedjson.nestedjson.dto;
+package com.nestedjson.nestedjson.firstpayload;
 
 import java.util.List;
 

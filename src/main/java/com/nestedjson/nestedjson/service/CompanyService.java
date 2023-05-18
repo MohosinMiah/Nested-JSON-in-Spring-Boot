@@ -1,13 +1,13 @@
 package com.nestedjson.nestedjson.service;
 
-import com.nestedjson.nestedjson.dto.CompanyDTO;
-import com.nestedjson.nestedjson.second.OrderRequest;
+import com.nestedjson.nestedjson.firstpayload.CompanyDTO;
+import com.nestedjson.nestedjson.payload.BaseOrderDto;
 
 import jakarta.validation.Valid;
 
 public interface CompanyService {
     CompanyDTO createCompany(CompanyDTO companyDTO);
 
-    OrderRequest createOrder(@Valid OrderRequest orderRequest);
+    BaseOrderDto createOrder(@Valid BaseOrderDto orderRequest);
 }
 
